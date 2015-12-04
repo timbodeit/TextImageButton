@@ -5,8 +5,10 @@ matrix:
   include:
     - osx_image: xcode7
       env: TEST_SDK=iphonesimulator9.0
-    - osx_image: xcode6.1
-      env: TEST_SDK=iphonesimulator8.1
+    - osx_image: xcode7.1
+      env: TEST_SDK=iphonesimulator9.1
+    - osx_image: xcode7.2b3
+      env: TEST_SDK=iphonesimulator9.2
 before_install:
 - xcodebuild -version -sdk
 - gem install cocoapods # Since Travis is not always on latest version
