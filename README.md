@@ -51,9 +51,8 @@ button.imagePosition = .Right
 
 While TextImageButton can be used in Objective-C code, it is written completely in Swift.
 
-It has been confirmed to compile with the following Swift versions:
-* Swift 2.0
-* Swift 2.1
+Version 0.2 is compatible with Swift 3.
+For Swift 2 use Version 0.1.1.
 
 ## Example Project
 

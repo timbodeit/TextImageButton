@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "TextImageButton"
-  s.version          = "0.1.1"
+  s.version          = "0.2"
   s.summary          = "Image spacing and side selection for UIButton"
 
   s.description      = <<-DESC
