@@ -1,7 +1,7 @@
 PODS:
-  - Nimble (3.0.0)
-  - Quick (0.8.0)
-  - TextImageButton (0.1.0)
+  - Nimble (6.1.0)
+  - Quick (1.1.0)
+  - TextImageButton (0.1.1)
 
 DEPENDENCIES:
   - Nimble
@@ -10,11 +10,13 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   TextImageButton:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
-  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
-  TextImageButton: 268359f80079a360cce10824ebe94dd2cd32700b
+  Nimble: c53e6903fee94041b90ded74f135820437d8bf59
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+  TextImageButton: 1a77557e4ef378c65187d91c538271d58f1ec857
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: b9ff5f0c42e0c54ab7c62f2bebe17f845aa7d222
+
+COCOAPODS: 1.1.1

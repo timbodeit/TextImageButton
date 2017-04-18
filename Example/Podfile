@@ -1,11 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'TextImageButton_Example', :exclusive => true do
+target 'TextImageButton_Example' do
   pod "TextImageButton", :path => "../"
 end
 
-target 'TextImageButton_Tests', :exclusive => true do
+target 'TextImageButton_Tests' do
   pod "TextImageButton", :path => "../"
   pod "Quick"
   pod "Nimble"

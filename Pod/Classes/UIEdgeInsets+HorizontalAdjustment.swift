@@ -18,7 +18,7 @@ extension UIEdgeInsets {
   
   - returns: The adjusted edge inset
   */
-  func adjust(left left: CGFloat, right: CGFloat) -> UIEdgeInsets {
+  func adjust(left: CGFloat, right: CGFloat) -> UIEdgeInsets {
     var edgeInsets = self
     edgeInsets.left += left
     edgeInsets.right += right

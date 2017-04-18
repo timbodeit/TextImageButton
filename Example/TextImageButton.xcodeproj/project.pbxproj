@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		124D286482249D33CDFAB6DC /* Pods_TextImageButton_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A315F8DB81EC006B932AD /* Pods_TextImageButton_Tests.framework */; };
-		55296BAF6E39E4AC758D0B11 /* Pods_TextImageButton_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4DC61AE74058035D58A99C /* Pods_TextImageButton_Example.framework */; };
+		576FF77EEA489565C7E76AC2 /* Pods_TextImageButton_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDF55E61904A732254B2B8B /* Pods_TextImageButton_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		FBA903043CA07B1E25F3C34E /* Pods_TextImageButton_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7187ED212A3645903E4891A6 /* Pods_TextImageButton_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		033A315F8DB81EC006B932AD /* Pods_TextImageButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextImageButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1017AB82CCB2914659345B72 /* Pods-TextImageButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextImageButton_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextImageButton_Tests/Pods-TextImageButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1E08741E2781AA8C1FC91C49 /* Pods-TextImageButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextImageButton_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextImageButton_Example/Pods-TextImageButton_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4DA4CB4A6EDF0626202E13D0 /* TextImageButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TextImageButton.podspec; path = ../TextImageButton.podspec; sourceTree = "<group>"; };
 		531106242AC0C654896F57F7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TextImageButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextImageButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,12 +42,11 @@
 		607FACE51AFB9204008FA782 /* TextImageButton_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextImageButton_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		633CDCB23A48DCDC09A76074 /* Pods-TextImageButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextImageButton_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextImageButton_Example/Pods-TextImageButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6FA8044614031C8AD8500737 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		8AB6278653F1E6F4F646C66D /* Pods-TextImageButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextImageButton_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextImageButton_Tests/Pods-TextImageButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		97694CE06E7F73CF54A2F21D /* Pods-TextImageButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextImageButton_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextImageButton_Example/Pods-TextImageButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C7AEFED602210CC6A2CE3C1D /* Pods-TextImageButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextImageButton_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextImageButton_Tests/Pods-TextImageButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C9BF51BB3CE9B83BDBA2F7D8 /* Pods-TextImageButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextImageButton_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextImageButton_Example/Pods-TextImageButton_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CF4DC61AE74058035D58A99C /* Pods_TextImageButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextImageButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7187ED212A3645903E4891A6 /* Pods_TextImageButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextImageButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97240AF82E2FD115B1883822 /* Pods-TextImageButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextImageButton_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextImageButton_Tests/Pods-TextImageButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFDF55E61904A732254B2B8B /* Pods_TextImageButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextImageButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55296BAF6E39E4AC758D0B11 /* Pods_TextImageButton_Example.framework in Frameworks */,
+				576FF77EEA489565C7E76AC2 /* Pods_TextImageButton_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,13 +62,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				124D286482249D33CDFAB6DC /* Pods_TextImageButton_Tests.framework in Frameworks */,
+				FBA903043CA07B1E25F3C34E /* Pods_TextImageButton_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A932D2B3331C2A98419F527 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				633CDCB23A48DCDC09A76074 /* Pods-TextImageButton_Example.debug.xcconfig */,
+				1E08741E2781AA8C1FC91C49 /* Pods-TextImageButton_Example.release.xcconfig */,
+				97240AF82E2FD115B1883822 /* Pods-TextImageButton_Tests.debug.xcconfig */,
+				1017AB82CCB2914659345B72 /* Pods-TextImageButton_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +87,8 @@
 				607FACD21AFB9204008FA782 /* Example for TextImageButton */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				C2BE031A9BEEDBBAD13E0315 /* Pods */,
-				E76D37DA359FE0160878EA78 /* Frameworks */,
+				5A932D2B3331C2A98419F527 /* Pods */,
+				E81FCCC2F51C5975085221D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,22 +150,11 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		C2BE031A9BEEDBBAD13E0315 /* Pods */ = {
+		E81FCCC2F51C5975085221D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				97694CE06E7F73CF54A2F21D /* Pods-TextImageButton_Example.debug.xcconfig */,
-				C9BF51BB3CE9B83BDBA2F7D8 /* Pods-TextImageButton_Example.release.xcconfig */,
-				C7AEFED602210CC6A2CE3C1D /* Pods-TextImageButton_Tests.debug.xcconfig */,
-				8AB6278653F1E6F4F646C66D /* Pods-TextImageButton_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E76D37DA359FE0160878EA78 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CF4DC61AE74058035D58A99C /* Pods_TextImageButton_Example.framework */,
-				033A315F8DB81EC006B932AD /* Pods_TextImageButton_Tests.framework */,
+				EFDF55E61904A732254B2B8B /* Pods_TextImageButton_Example.framework */,
+				7187ED212A3645903E4891A6 /* Pods_TextImageButton_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,12 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TextImageButton_Example" */;
 			buildPhases = (
-				662EF55CEC2E50BF653AF9B7 /* Check Pods Manifest.lock */,
+				6EDA966B194B4006607A4418 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				C492648B15A80978A8E220AD /* Embed Pods Frameworks */,
-				8B620A53C2ACDE01C7EBF702 /* Copy Pods Resources */,
+				FE5ECC632F7F82EEE115CCA6 /* [CP] Embed Pods Frameworks */,
+				CFCC03F1C83CAD2074B8B1FA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,12 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TextImageButton_Tests" */;
 			buildPhases = (
-				687AB0894CC2065FB09C55DA /* Check Pods Manifest.lock */,
+				3530A90EA21EA7BCEE46D53D /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				48DEC194AB975D97F850DFFE /* Embed Pods Frameworks */,
-				6C7BACDD73AD5DBC8A2F8EFA /* Copy Pods Resources */,
+				5EB3BF424209B5BE77C0D04D /* [CP] Embed Pods Frameworks */,
+				DF4B104C6ADDAC4FBE41896A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,14 +211,16 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0830;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -263,14 +265,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		48DEC194AB975D97F850DFFE /* Embed Pods Frameworks */ = {
+		3530A90EA21EA7BCEE46D53D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5EB3BF424209B5BE77C0D04D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,59 +295,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextImageButton_Tests/Pods-TextImageButton_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		662EF55CEC2E50BF653AF9B7 /* Check Pods Manifest.lock */ = {
+		6EDA966B194B4006607A4418 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		687AB0894CC2065FB09C55DA /* Check Pods Manifest.lock */ = {
+		CFCC03F1C83CAD2074B8B1FA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6C7BACDD73AD5DBC8A2F8EFA /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextImageButton_Tests/Pods-TextImageButton_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8B620A53C2ACDE01C7EBF702 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,14 +325,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextImageButton_Example/Pods-TextImageButton_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C492648B15A80978A8E220AD /* Embed Pods Frameworks */ = {
+		DF4B104C6ADDAC4FBE41896A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextImageButton_Tests/Pods-TextImageButton_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE5ECC632F7F82EEE115CCA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,8 +418,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -461,8 +465,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -481,42 +487,48 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97694CE06E7F73CF54A2F21D /* Pods-TextImageButton_Example.debug.xcconfig */;
+			baseConfigurationReference = 633CDCB23A48DCDC09A76074 /* Pods-TextImageButton_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TextImageButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9BF51BB3CE9B83BDBA2F7D8 /* Pods-TextImageButton_Example.release.xcconfig */;
+			baseConfigurationReference = 1E08741E2781AA8C1FC91C49 /* Pods-TextImageButton_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TextImageButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7AEFED602210CC6A2CE3C1D /* Pods-TextImageButton_Tests.debug.xcconfig */;
+			baseConfigurationReference = 97240AF82E2FD115B1883822 /* Pods-TextImageButton_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -530,14 +542,16 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextImageButton_Example.app/TextImageButton_Example";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AB6278653F1E6F4F646C66D /* Pods-TextImageButton_Tests.release.xcconfig */;
+			baseConfigurationReference = 1017AB82CCB2914659345B72 /* Pods-TextImageButton_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -547,6 +561,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextImageButton_Example.app/TextImageButton_Example";
 			};
 			name = Release;

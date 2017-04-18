@@ -12,11 +12,11 @@ import TextImageButton
 class ViewController: UIViewController {
 
     @IBOutlet weak var textImageButton: TextImageButton!
-    var timer: NSTimer!
+    var timer: Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "updateTitle", userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(ViewController.updateTitle), userInfo: nil, repeats: true)
         timer.fire()
     }
     
@@ -25,21 +25,21 @@ class ViewController: UIViewController {
     lazy var additionalCharacterIndex: String.Index = { return self.additionalText.startIndex }()
     
     func updateTitle() {
-        let title = baseText + additionalText.substringToIndex(additionalCharacterIndex)
-        textImageButton.setTitle(title, forState: .Normal)
+        let title = baseText + additionalText.substring(to: additionalCharacterIndex)
+        textImageButton.setTitle(title, for: .normal)
         
         if additionalCharacterIndex == additionalText.endIndex {
             additionalCharacterIndex = additionalText.startIndex
         } else {
-            additionalCharacterIndex = additionalCharacterIndex.successor()
+            additionalCharacterIndex = additionalText.index(after: additionalCharacterIndex)
         }
     }
     
-    @IBAction func changeSide(sender: UISegmentedControl) {
-        textImageButton.imagePosition = (sender.selectedSegmentIndex == 0) ? .Left : .Right
+    @IBAction func changeSide(_ sender: UISegmentedControl) {
+        textImageButton.imagePosition = (sender.selectedSegmentIndex == 0) ? .left : .right
     }
     
-    @IBAction func changeSpacing(sender: UISlider) {
+    @IBAction func changeSpacing(_ sender: UISlider) {
         textImageButton.spacing = CGFloat(sender.value)
     }
 

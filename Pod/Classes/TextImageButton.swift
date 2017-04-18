@@ -12,34 +12,34 @@ import UIKit
 UIButton subclass that allows allows changing spacing between text and image and 
 side the image is displayed on.
 */
-@objc public class TextImageButton: UIButton {
+@objc open class TextImageButton: UIButton {
   
   /// Represents horizontal side for the imagePosition attribute
   @objc public enum Side: Int {
-    case Left, Right
+    case left, right
   }
   
   /// The spacing between the button image and the button title
-  @IBInspectable public var spacing: CGFloat = 0.0 as CGFloat {
+  @IBInspectable open var spacing: CGFloat = 0.0 as CGFloat {
     didSet {
       invalidateIntrinsicContentSize()
     }
   }
   
   /// The side of the button to display the image on
-  @objc public var imagePosition: Side = Side.Left {
+  @objc open var imagePosition: Side = Side.left {
     didSet {
       setNeedsLayout()
     }
   }
   
   /// IBInspectable accessor for imagePosition
-  @objc @IBInspectable public var imageOnRight: Bool {
+  @objc @IBInspectable open var imageOnRight: Bool {
     get {
-      return imagePosition == .Right
+      return imagePosition == .right
     }
     set {
-      imagePosition = newValue ? .Right : .Left
+      imagePosition = newValue ? .right : .left
     }
   }
   
@@ -55,7 +55,7 @@ side the image is displayed on.
   */
   private var enableSpacingAdjustments = 0
   
-  override public var contentEdgeInsets: UIEdgeInsets {
+  override open var contentEdgeInsets: UIEdgeInsets {
     get {
       let adjustment = (enableSpacingAdjustments > 0) ? (spacing/2) : 0
       return super.contentEdgeInsets.adjust(left: adjustment, right: adjustment)
@@ -63,7 +63,7 @@ side the image is displayed on.
     set(contentEdgeInsets) { super.contentEdgeInsets = contentEdgeInsets }
   }
   
-  override public var titleEdgeInsets: UIEdgeInsets {
+  override open var titleEdgeInsets: UIEdgeInsets {
     get {
       let adjustment = (enableSpacingAdjustments > 0) ? (spacing/2) : 0
       return super.titleEdgeInsets.adjust(left: adjustment, right: -adjustment)
@@ -71,7 +71,7 @@ side the image is displayed on.
     set(titleEdgeInsets) { super.titleEdgeInsets = titleEdgeInsets }
   }
   
-  override public var imageEdgeInsets: UIEdgeInsets {
+  override open var imageEdgeInsets: UIEdgeInsets {
     get {
       let adjustment = (enableSpacingAdjustments > 0) ? (spacing/2) : 0
       return super.imageEdgeInsets.adjust(left: -adjustment, right: adjustment)
@@ -79,26 +79,26 @@ side the image is displayed on.
     set(imageEdgeInsets) { super.imageEdgeInsets = imageEdgeInsets }
   }
   
-  public override func intrinsicContentSize() -> CGSize {
-    enableSpacingAdjustments++
-    let contentSize = super.intrinsicContentSize()
-    enableSpacingAdjustments--
+  open override var intrinsicContentSize: CGSize {
+    enableSpacingAdjustments += 1
+    let contentSize = super.intrinsicContentSize
+    enableSpacingAdjustments -= 1
     
     return contentSize
   }
   
-  public override func sizeThatFits(size: CGSize) -> CGSize {
-    enableSpacingAdjustments++
+  open override func sizeThatFits(_ size: CGSize) -> CGSize {
+    enableSpacingAdjustments += 1
     let size = super.sizeThatFits(size)
-    enableSpacingAdjustments--
+    enableSpacingAdjustments -= 1
     
     return size
   }
   
-  public override func contentRectForBounds(bounds: CGRect) -> CGRect {
-    enableSpacingAdjustments++
-    let contentRect = super.contentRectForBounds(bounds)
-    enableSpacingAdjustments--
+  open override func contentRect(forBounds bounds: CGRect) -> CGRect {
+    enableSpacingAdjustments += 1
+    let contentRect = super.contentRect(forBounds: bounds)
+    enableSpacingAdjustments -= 1
     
     return contentRect
   }
@@ -106,26 +106,26 @@ side the image is displayed on.
   
   // MARK: - Image Side
   
-  public override func titleRectForContentRect(contentRect: CGRect) -> CGRect {
-    enableSpacingAdjustments++
-    var titleRect = super.titleRectForContentRect(contentRect)
-    let imageRect = super.imageRectForContentRect(contentRect)
-    enableSpacingAdjustments--
+  open override func titleRect(forContentRect contentRect: CGRect) -> CGRect {
+    enableSpacingAdjustments += 1
+    var titleRect = super.titleRect(forContentRect: contentRect)
+    let imageRect = super.imageRect(forContentRect: contentRect)
+    enableSpacingAdjustments -= 1
     
-    if imagePosition == .Right {
+    if imagePosition == .right {
       titleRect.origin.x = imageRect.minX
     }
     
     return titleRect
   }
   
-  public override func imageRectForContentRect(contentRect: CGRect) -> CGRect {
-    enableSpacingAdjustments++
-    let titleRect = super.titleRectForContentRect(contentRect)
-    var imageRect = super.imageRectForContentRect(contentRect)
-    enableSpacingAdjustments--
+  open override func imageRect(forContentRect contentRect: CGRect) -> CGRect {
+    enableSpacingAdjustments += 1
+    let titleRect = super.titleRect(forContentRect: contentRect)
+    var imageRect = super.imageRect(forContentRect: contentRect)
+    enableSpacingAdjustments -= 1
     
-    if imagePosition == .Right {
+    if imagePosition == .right {
       imageRect.origin.x = titleRect.maxX - imageRect.width
     }
     
